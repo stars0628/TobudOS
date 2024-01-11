@@ -9,15 +9,13 @@ set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 set(TINY_ROOT ../../../)
 
 include_directories(${TINY_ROOT}/osal/cmsis_os)
-include_directories(${TINY_ROOT}/kernel/core/include)
-include_directories(${TINY_ROOT}/kernel/evtdrv/include)
-include_directories(${TINY_ROOT}/kernel/hal/include)
-include_directories(${TINY_ROOT}/kernel/pm/include)
+include_directories(${TINY_ROOT}/core/include)
+include_directories(${TINY_ROOT}/hal/include)
+include_directories(${TINY_ROOT}/pm/include)
 
 set(CMSIS_SRCS ${TINY_ROOT}/osal/cmsis_os/cmsis_os.c)
-aux_source_directory(${TINY_ROOT}/kernel/core CORE_SRCS)
-aux_source_directory(${TINY_ROOT}/kernel/evtdrv EVTDRV_SRCS)
-aux_source_directory(${TINY_ROOT}/kernel/pm PM_SRCS)
+aux_source_directory(${TINY_ROOT}/core CORE_SRCS)
+aux_source_directory(${TINY_ROOT}/pm PM_SRCS)
 
 set(ARCH_ROOT ${TINY_ROOT}/arch/linux)
 

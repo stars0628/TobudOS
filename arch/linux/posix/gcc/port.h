@@ -47,7 +47,12 @@
 
 #define SIG_SUSPEND					SIGUSR1
 #define SIG_RESUME					SIGUSR2
+#ifdef __APPLE__
+#define SIG_CONTEXT_SWITCH          SIGIO
+#warning this signal just for compile pass on macOS, can not real run
+#else
 #define SIG_CONTEXT_SWITCH          SIGRTMIN
+#endif
 #define SIG_TICK					SIGALRM
 #define TIMER_TYPE					ITIMER_REAL
 
