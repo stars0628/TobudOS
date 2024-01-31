@@ -137,7 +137,7 @@ used throughout the whole project.
 #define osCMSIS_KERNEL    0x10000	   ///< RTOS identification and version (main [31:16] .sub [15:0])
 
 /// \note MUST REMAIN UNCHANGED: \b osKernelSystemId shall be consistent in every CMSIS-RTOS.
-#define osKernelSystemId "TencentOS tiny V1.00"   ///< RTOS identification string
+#define osKernelSystemId "TobudOS V1.00"   ///< RTOS identification string
 
 /// \note MUST REMAIN UNCHANGED: \b osFeature_xxx shall be consistent in every CMSIS-RTOS.
 #define osFeature_MainThread   1       ///< main thread      1=main can be thread, 0=not available

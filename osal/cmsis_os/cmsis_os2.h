@@ -54,7 +54,7 @@
 #define osCMSIS_KERNEL      0x10000U    ///< RTOS identification and version (main[31:16].sub[15:0])
  
 /// \note CAN BE CHANGED: \b osKernelSystemId identifies the underlying RTOS kernel.
-#define osKernelSystemId "TencentOS tiny V1.00"  ///< RTOS identification string
+#define osKernelSystemId "TobudOS V1.00"  ///< RTOS identification string
  
 #ifndef __NO_RETURN
 #if   defined(__CC_ARM)
